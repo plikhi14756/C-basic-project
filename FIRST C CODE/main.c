@@ -1579,7 +1579,7 @@ void swapNumbers(int a, int b)
     // we have used temperary variable to swap 2 numbers because when  we will do a = b and b = a to swap two numbers because during this process a will lost lost its original value and instead of swapping we will get 2 same numbers
 
     
-    
+    printf("\n********************* Welcome to number swapping program ************************\n");
     
     int temp;
     
@@ -1593,8 +1593,12 @@ void swapNumbers(int a, int b)
     b = temp;
     
     printf("\nSwapped values of a and b are:\n a = %d and b = %d\n", a, b);
+
+    printf("\n********************* The End ************************\n");
     
-    }
+}
+
+
 
 int randomNumbers()
 {
@@ -1645,61 +1649,21 @@ int randomNumbers()
     {
         
         firstprogram(); // this function has information regarding first program
-        //datatypes(); //   this function has information regarding all data types used in C language
-        //userinput(); // this function has information regarding syntax which is used in C language to take variable input from user.
-        //typeconversion(); // This Function has information regarding the concept data type conversion
-        //Operators(); // This function has information regarding all operators used in C language
-        //loops(); // This function will have information about all types of loops used in c language program
-        //function(); // this function will have information about the concept of functions in c language
-        //recursionfunction(); // this function has all information about the concept of Recursive function in C language
-        //arrays(); // This function will have information about the concept of arrays in c language
-        //strings(); // this function has information about the concept strings in c language
-        // pointers(); // this function has information about the cocept of pointers that we use in c language
-        //structures(); // this function has information about the concept of structures that we comonnly use in c language
-        //enumations(); // this function has information about the concept of enumations that we comonnly use in c language
-        //dymelloc(); // this function has information about the concept of dynamic memory allocation that we comonnly use in c language
-        //   fileoperations(); // this function has information about the concept of file handling operations that we comonnly use in c language
-        // Macros();// this function has information about the concept of Mcro functions and directives that we comonnly use in c language
-        //swapNumbers(5, 6); // this is the special function that we have created to swap any two numbers
-        //randomNumbers();
-        
-        printf("\nThis program will use c language in-built random number generator to generate random nubers eveytime it exutes it will genrate different numbers according to user-defined limits\n");
-        
-        int limit;
-        char number;
-        int n;
-        
-        printf("\nTill what range you want to generate random numbers(max - 3152600) - ");
-        scanf("%d", &limit);
-        
-        printf("\nHow many random numbers do you want to generate - ");
-        scanf("%d", &n);
-        // srand() - this function tells our program when to start generate new random numbers
-        
-        // rand() - this is the function which generates random numbers in our program.
-        
-        // if we use rand() without ant limits it will always genarate random numbers from 0 to 317500 [number = (rand() % 3) + 1;] this is the modified version of rand() function that is commonly used by c language programers(%3 will ensure that this function(rand()) will genrate random numbers between 0 and 3. we have use (+ 1) with rand() so that this program will generate numbers from 1 and 3 only
-
-        // we have time(NULL) as pareter in srand() function because it gives our the ability to generate a random number everytime we execute the program
-        
-        
-        // to use these functions in our program we alwaya need 2 header files [stdlib.h] - to acess rand() and srand() functions and [time.h] to time() function as paremeter in srand function
-        
-        // use of srand()
-        srand(time(NULL)); // It is a special type of function in c language which allws the user to access c language built-in random number generater feature
-
-        for (int i = 0; i < n; ++i) {
-            number = (rand() % limit) + 1; // this is a special function because it should be used with srand only to complete random number generation program
-            printf("%d\n", number);
-        }
-        
-        
-        
-        
-        printf ("\n********************* The End ************************\n");
-        
-        
-        
-        
-        return 0;
+        datatypes(); //   this function has information regarding all data types used in C language
+        userinput(); // this function has information regarding syntax which is used in C language to take variable input from user.
+        typeconversion(); // This Function has information regarding the concept data type conversion
+        Operators(); // This function has information regarding all operators used in C language
+        loops(); // This function will have information about all types of loops used in c language program
+        function(); // this function will have information about the concept of functions in c language
+        recursionfunction(); // this function has all information about the concept of Recursive function in C language
+        arrays(); // This function will have information about the concept of arrays in c language
+        strings(); // this function has information about the concept strings in c language
+        pointers(); // this function has information about the cocept of pointers that we use in c language
+        structures(); // this function has information about the concept of structures that we comonnly use in c language
+        enumations(); // this function has information about the concept of enumations that we comonnly use in c language
+        dymelloc(); // this function has information about the concept of dynamic memory allocation that we comonnly use in c language
+        fileoperations(); // this function has information about the concept of file handling operations that we comonnly use in c language
+        Macros();// this function has information about the concept of Mcro functions and directives that we comonnly use in c language
+        swapNumbers(5, 6); // this is the special function that we have created to swap any two numbers
+        randomNumbers(); // This is a special function which we have create to generate random numbers everytime we use it
     }
