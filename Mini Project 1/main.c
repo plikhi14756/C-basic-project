@@ -22,8 +22,8 @@ int computerChoice()
         switch (choice)
         {
             case 1:
-               // printf("stone\n");
-                return 's';
+               // printf("rock\n");
+                return 'r';
                 break;
                 
             case 2:
@@ -33,7 +33,7 @@ int computerChoice()
                 
             case 3:
                 //printf("scissors\n");
-                return 'S';
+                return 's';
                 break;
                 
             default:
@@ -55,23 +55,24 @@ int player1Choice()
     
     char choose;
     getchar();
-    printf("Player-1 choice (s - stone, p - paper and S - scissors): ");
+    printf("Player-1 choice (r - rock, p - paper and s - scissors): ");
     scanf("%c", &choose);
     
     switch (choose)
     {
-        case 's':
-          //  printf("Player 1 choice is: stone\n");
-            return 's';
+        case 'r':
+          //  printf("Player 1 choice is: rock\n");
+            return 'r';
             break;
             
         case 'p':
+            //  printf("Player 1 choice is: paper\n"); 
             return 'p';
             break;
-            
-        case 'S':
+           
+        case 's':
           //  printf("Player 1 choice is: Scissors\n");
-            return 'S';
+            return 's';
             break;
             
         default:
@@ -88,14 +89,14 @@ int player2Choice()
     
     char choose;
     getchar();
-    printf("Player-2 choice (s - stone, p - paper and S - scissors): ");
+    printf("Player-2 choice (r - rock, p - paper and s - scissors): ");
     scanf("%c", &choose);
     
     switch (choose)
     {
-        case 's':
+        case 'r':
             
-            return 's';
+            return 'r';
             break;
             
         case 'p':
@@ -103,9 +104,9 @@ int player2Choice()
             return 'p';
             break;
             
-        case 'S':
+        case 's':
           
-            return 'S';
+            return 's';
             break;
             
         default:
@@ -122,7 +123,7 @@ int getReasult1()
         char result1 = computerChoice();
         char result2 = player1Choice();
     
-       // Numerical values are (stone (s) - 115), (paper (p) - 112) and (scissors (S) - 83)
+       // Numerical values are (rock (r) - 115), (paper (p) - 112) and (scissors (s) - 83)
     
     printf("(w - Winner, l - looser and d - draw)\n");
         
